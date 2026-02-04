@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <form action="processa.php" method="POST" id="formCadastro">
+            <h1>Criar Conta</h1>
+
+            <div class="campo">
+                <label for="idNome">Nome:</label>
+                <input type="text" name="nome" id="idNome">
+                <span class="msg-erro" id="erroNome"></span>
+            </div>
+
+            <div class="campo">
+                <label for="idEmail">Email:</label>
+                <input type="email" name="email" id="idEmail">
+                <span class="msg-erro" id="erroEmail"></span>
+            </div>
+
+            <div class="campo">
+                <label for="idIdade">Idade:</label>
+                <input type="number" name="idade" id="idIdade">
+                <span class="msg-erro" id="erroIdade"></span>
+            </div>
+
+            <div class="campo">
+                <label for="idSenha">Senha:</label>
+                <input type="password" name="senha" id="idSenha">
+                <span class="msg-erro" id="erroSenha"></span>
+            </div>
+
+            <div class="campo">
+                <label for="idConfirmar">Confirmar Senha:</label>
+                <input type="password" name="confirmar" id="idConfirmar">
+                <span class="msg-erro" id="erroConfirmar"></span>
+            </div>
+
+            <div class="campo-check">
+                <input type="checkbox" name="termos" id="idTermo">
+                <label for="idTermo">Aceitar <a href="">Termos de uso</a></label> <br>
+                <span class="msg-erro" id="erroTermo"></span>
+            </div>
+            
+            <div class="campo">
+                <button type="submit" id="idEnviar">Enviar Cadastro</button>
+            </div>
+            
+        </form>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
